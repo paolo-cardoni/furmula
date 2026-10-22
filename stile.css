@@ -1,0 +1,129 @@
+/* Lo stile del sito di Furmula Fun: gli stessi colori del gioco (gioco/src/arte/palette.ts). */
+:root {
+  --sfondo: #E2F2FA;
+  --carta: #FFFFFF;
+  --testo: #4A3B5C;
+  --tenue: #6E5E82;
+  --bordo: #4A3B5C;
+  --accento: #E8505B;
+  --verde: #43B05C;
+  --arancio: #FF9A3C;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sfondo: #221A2C;
+    --carta: #30263D;
+    --testo: #F4EEF9;
+    --tenue: #C9BCD8;
+    --bordo: #6E5E82;
+    --accento: #FF7A83;
+    --verde: #6FD08A;
+    --arancio: #FFB46E;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1.25rem 4rem;
+  background: var(--sfondo);
+  color: var(--testo);
+  font: 16px/1.65 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 1.2;
+  margin: 0 0 0.25rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2.25rem 0 0.5rem;
+  color: var(--accento);
+}
+
+section + section {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 3px dashed var(--bordo);
+}
+
+.lingue {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.data {
+  color: var(--tenue);
+  font-size: 0.9rem;
+  margin: 0 0 2rem;
+}
+
+.riquadro {
+  background: var(--carta);
+  border: 3px solid var(--bordo);
+  border-radius: 18px;
+  padding: 1.25rem 1.4rem;
+  margin: 1.5rem 0;
+}
+
+.riquadro p:first-child {
+  margin-top: 0;
+}
+
+.riquadro p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+a {
+  color: var(--accento);
+}
+
+.logo {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 1rem 0 0.5rem;
+}
+
+.logo span {
+  color: var(--arancio);
+}
+
+.bottone {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.7rem 1.3rem;
+  font-weight: 700;
+  color: var(--testo);
+  text-decoration: none;
+  background: var(--carta);
+  border: 3px solid var(--bordo);
+  border-radius: 999px;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--bordo);
+  color: var(--tenue);
+  font-size: 0.9rem;
+}
